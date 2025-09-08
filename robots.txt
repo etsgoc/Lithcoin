@@ -1,0 +1,3 @@
+useer-agent: *
+Allow: /
+Sitemap: https://lithcoin.xyz/sitemap.xml

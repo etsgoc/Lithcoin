@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="200" viewBox="0 0 1400 200" preserveAspectRatio="none">
+  <!-- Background with subtle grid -->
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f0f0f0" stroke-width="0.3" opacity="0.5"/>
+    </pattern>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="#fafafa"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <!-- Moving container -->
+  <g>
+    <!-- Continuous candlestick pattern -->
+    <g id="candles">
+      <!-- Set 1: Bull trend -->
+      <g transform="translate(0,0)">
+        <line x1="4" x2="4" y1="85" y2="105" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="90" width="4" height="12" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(8,0)">
+        <line x1="4" x2="4" y1="80" y2="95" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="82" width="4" height="10" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(16,0)">
+        <rect x="2" y="75" width="4" height="18" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(24,0)">
+        <line x1="4" x2="4" y1="70" y2="85" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="73" width="4" height="9" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(32,0)">
+        <line x1="4" x2="4" y1="68" y2="88" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="75" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(40,0)">
+        <line x1="4" x2="4" y1="65" y2="80" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="68" width="4" height="10" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(48,0)">
+        <rect x="2" y="62" width="4" height="14" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(56,0)">
+        <line x1="4" x2="4" y1="58" y2="75" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="65" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(64,0)">
+        <line x1="4" x2="4" y1="55" y2="68" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="58" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(72,0)">
+        <rect x="2" y="52" width="4" height="12" fill="#16c784" rx="0.5"/>
+      </g>
+
+      <!-- Set 2: Bear correction -->
+      <g transform="translate(80,0)">
+        <line x1="4" x2="4" y1="50" y2="70" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="55" width="4" height="12" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(88,0)">
+        <line x1="4" x2="4" y1="58" y2="75" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="62" width="4" height="9" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(96,0)">
+        <line x1="4" x2="4" y1="65" y2="85" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="70" width="4" height="12" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(104,0)">
+        <rect x="2" y="75" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(112,0)">
+        <line x1="4" x2="4" y1="80" y2="95" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="85" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(120,0)">
+        <line x1="4" x2="4" y1="85" y2="98" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="88" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(128,0)">
+        <line x1="4" x2="4" y1="90" y2="105" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="95" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(136,0)">
+        <rect x="2" y="98" width="4" height="10" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(144,0)">
+        <line x1="4" x2="4" y1="100" y2="115" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="105" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(152,0)">
+        <line x1="4" x2="4" y1="95" y2="108" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="100" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+
+      <!-- Set 3: Consolidation -->
+      <g transform="translate(160,0)">
+        <line x1="4" x2="4" y1="95" y2="110" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="100" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(168,0)">
+        <line x1="4" x2="4" y1="92" y2="112" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="98" width="4" height="9" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(176,0)">
+        <rect x="2" y="102" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(184,0)">
+        <line x1="4" x2="4" y1="96" y2="114" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="103" width="4" height="7" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(192,0)">
+        <line x1="4" x2="4" y1="98" y2="112" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="102" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(200,0)">
+        <rect x="2" y="104" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(208,0)">
+        <line x1="4" x2="4" y1="100" y2="115" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="105" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(216,0)">
+        <line x1="4" x2="4" y1="97" y2="117" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="105" width="4" height="9" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(224,0)">
+        <rect x="2" y="106" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(232,0)">
+        <line x1="4" x2="4" y1="102" y2="118" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="108" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+
+      <!-- Set 4: Bull breakout -->
+      <g transform="translate(240,0)">
+        <line x1="4" x2="4" y1="100" y2="115" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="105" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(248,0)">
+        <line x1="4" x2="4" y1="95" y2="108" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="100" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(256,0)">
+        <rect x="2" y="88" width="4" height="14" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(264,0)">
+        <line x1="4" x2="4" y1="80" y2="95" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="85" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(272,0)">
+        <line x1="4" x2="4" y1="78" y2="92" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="83" width="4" height="7" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(280,0)">
+        <line x1="4" x2="4" y1="72" y2="86" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="76" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(288,0)">
+        <line x1="4" x2="4" y1="68" y2="80" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="72" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(296,0)">
+        <rect x="2" y="65" width="4" height="12" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(304,0)">
+        <line x1="4" x2="4" y1="60" y2="75" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="68" width="4" height="5" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(312,0)">
+        <line x1="4" x2="4" y1="55" y2="68" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="60" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+
+      <!-- Set 5: Volatility -->
+      <g transform="translate(320,0)">
+        <line x1="4" x2="4" y1="52" y2="75" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="60" width="4" height="12" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(328,0)">
+        <line x1="4" x2="4" y1="55" y2="68" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="58" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(336,0)">
+        <line x1="4" x2="4" y1="50" y2="72" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="55" width="4" height="14" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(344,0)">
+        <rect x="2" y="62" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(352,0)">
+        <line x1="4" x2="4" y1="65" y2="82" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="72" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(360,0)">
+        <line x1="4" x2="4" y1="70" y2="85" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="74" width="4" height="9" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(368,0)">
+        <line x1="4" x2="4" y1="68" y2="88" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="76" width="4" height="10" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(376,0)">
+        <rect x="2" y="72" width="4" height="11" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(384,0)">
+        <line x1="4" x2="4" y1="75" y2="92" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="82" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(392,0)">
+        <line x1="4" x2="4" y1="78" y2="88" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="81" width="4" height="5" fill="#16c784" rx="0.5"/>
+      </g>
+
+      <!-- Set 6: Recovery -->
+      <g transform="translate(400,0)">
+        <line x1="4" x2="4" y1="80" y2="95" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="86" width="4" height="7" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(408,0)">
+        <line x1="4" x2="4" y1="78" y2="90" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="82" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(416,0)">
+        <rect x="2" y="76" width="4" height="10" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(424,0)">
+        <line x1="4" x2="4" y1="72" y2="85" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="76" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(432,0)">
+        <line x1="4" x2="4" y1="70" y2="88" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="78" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(440,0)">
+        <line x1="4" x2="4" y1="68" y2="80" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="72" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(448,0)">
+        <rect x="2" y="68" width="4" height="9" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(456,0)">
+        <line x1="4" x2="4" y1="65" y2="82" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="72" width="4" height="7" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(464,0)">
+        <line x1="4" x2="4" y1="62" y2="75" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="67" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(472,0)">
+        <line x1="4" x2="4" y1="58" y2="72" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="63" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+
+      <!-- Set 7: More patterns (continuing seamlessly) -->
+      <g transform="translate(480,0)">
+        <rect x="2" y="60" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(488,0)">
+        <line x1="4" x2="4" y1="55" y2="72" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="63" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(496,0)">
+        <line x1="4" x2="4" y1="58" y2="70" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="62" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(504,0)">
+        <line x1="4" x2="4" y1="60" y2="75" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="64" width="4" height="9" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(512,0)">
+        <rect x="2" y="68" width="4" height="7" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(520,0)">
+        <line x1="4" x2="4" y1="70" y2="85" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="76" width="4" height="7" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(528,0)">
+        <line x1="4" x2="4" y1="72" y2="88" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="78" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(536,0)">
+        <rect x="2" y="80" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(544,0)">
+        <line x1="4" x2="4" y1="78" y2="92" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="84" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(552,0)">
+        <line x1="4" x2="4" y1="82" y2="95" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="87" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+
+      <!-- Continue pattern to complete 800px width -->
+      <g transform="translate(560,0)">
+        <rect x="2" y="85" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(568,0)">
+        <line x1="4" x2="4" y1="80" y2="98" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="88" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(576,0)">
+        <line x1="4" x2="4" y1="85" y2="100" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="90" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(584,0)">
+        <rect x="2" y="88" width="4" height="10" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(592,0)">
+        <line x1="4" x2="4" y1="82" y2="102" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="92" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+
+      <!-- Final set to ensure seamless loop at 600px -->
+      <g transform="translate(600,0)">
+        <line x1="4" x2="4" y1="88" y2="105" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="95" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(608,0)">
+        <line x1="4" x2="4" y1="90" y2="102" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="94" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(616,0)">
+        <rect x="2" y="90" width="4" height="10" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(624,0)">
+        <line x1="4" x2="4" y1="85" y2="98" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="89" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(632,0)">
+        <line x1="4" x2="4" y1="82" y2="95" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="87" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(640,0)">
+        <line x1="4" x2="4" y1="80" y2="92" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="84" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(648,0)">
+        <rect x="2" y="82" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(656,0)">
+        <line x1="4" x2="4" y1="78" y2="92" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="84" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(664,0)">
+        <line x1="4" x2="4" y1="75" y2="88" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="80" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(672,0)">
+        <line x1="4" x2="4" y1="72" y2="86" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="77" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(680,0)">
+        <rect x="2" y="75" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(688,0)">
+        <line x1="4" x2="4" y1="70" y2="88" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="78" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(696,0)">
+        <line x1="4" x2="4" y1="75" y2="90" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="80" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(704,0)">
+        <line x1="4" x2="4" y1="78" y2="92" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="83" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(712,0)">
+        <rect x="2" y="80" width="4" height="10" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(720,0)">
+        <line x1="4" x2="4" y1="82" y2="95" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="87" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(728,0)">
+        <line x1="4" x2="4" y1="84" y2="96" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="88" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(736,0)">
+        <rect x="2" y="86" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(744,0)">
+        <line x1="4" x2="4" y1="83" y2="98" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="89" width="4" height="7" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(752,0)">
+        <line x1="4" x2="4" y1="85" y2="100" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="90" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(760,0)">
+        <line x1="4" x2="4" y1="88" y2="102" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="93" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(768,0)">
+        <rect x="2" y="90" width="4" height="9" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(776,0)">
+        <line x1="4" x2="4" y1="87" y2="104" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="94" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(784,0)">
+        <line x1="4" x2="4" y1="90" y2="105" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="96" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(792,0)">
+        <rect x="2" y="93" width="4" height="10" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(800,0)">
+        <line x1="4" x2="4" y1="88" y2="108" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="98" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(808,0)">
+        <line x1="4" x2="4" y1="92" y2="105" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="96" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(816,0)">
+        <rect x="2" y="90" width="4" height="12" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(824,0)">
+        <line x1="4" x2="4" y1="85" y2="102" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="92" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(832,0)">
+        <line x1="4" x2="4" y1="88" y2="98" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="91" width="4" height="5" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(840,0)">
+        <rect x="2" y="87" width="4" height="9" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(848,0)">
+        <line x1="4" x2="4" y1="82" y2="98" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="89" width="4" height="7" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(856,0)">
+        <line x1="4" x2="4" y1="80" y2="92" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="84" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(864,0)">
+        <line x1="4" x2="4" y1="78" y2="95" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="82" width="4" height="10" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(872,0)">
+        <rect x="2" y="75" width="4" height="12" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(880,0)">
+        <line x1="4" x2="4" y1="70" y2="88" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="78" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(888,0)">
+        <line x1="4" x2="4" y1="68" y2="82" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="72" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(896,0)">
+        <rect x="2" y="65" width="4" height="14" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(904,0)">
+        <line x1="4" x2="4" y1="58" y2="75" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="66" width="4" height="7" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(912,0)">
+        <line x1="4" x2="4" y1="55" y2="68" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="59" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(920,0)">
+        <rect x="2" y="52" width="4" height="11" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(928,0)">
+        <line x1="4" x2="4" y1="48" y2="68" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="56" width="4" height="9" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(936,0)">
+        <line x1="4" x2="4" y1="50" y2="62" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="53" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(944,0)">
+        <rect x="2" y="48" width="4" height="10" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(952,0)">
+        <line x1="4" x2="4" y1="45" y2="62" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="53" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(960,0)">
+        <line x1="4" x2="4" y1="50" y2="65" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="54" width="4" height="9" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(968,0)">
+        <rect x="2" y="55" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(976,0)">
+        <line x1="4" x2="4" y1="58" y2="72" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="62" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(984,0)">
+        <line x1="4" x2="4" y1="62" y2="78" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="66" width="4" height="10" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(992,0)">
+        <rect x="2" y="70" width="4" height="12" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1000,0)">
+        <line x1="4" x2="4" y1="75" y2="92" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="82" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1008,0)">
+        <line x1="4" x2="4" y1="78" y2="88" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="81" width="4" height="5" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1016,0)">
+        <rect x="2" y="80" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1024,0)">
+        <line x1="4" x2="4" y1="82" y2="95" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="87" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1032,0)">
+        <line x1="4" x2="4" y1="84" y2="96" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="88" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1040,0)">
+        <rect x="2" y="86" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1048,0)">
+        <line x1="4" x2="4" y1="83" y2="98" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="89" width="4" height="7" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1056,0)">
+        <line x1="4" x2="4" y1="85" y2="100" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="90" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1064,0)">
+        <rect x="2" y="88" width="4" height="10" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1072,0)">
+        <line x1="4" x2="4" y1="82" y2="102" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="92" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1080,0)">
+        <line x1="4" x2="4" y1="88" y2="105" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="95" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1088,0)">
+        <rect x="2" y="90" width="4" height="10" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1096,0)">
+        <line x1="4" x2="4" y1="85" y2="98" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="89" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1104,0)">
+        <line x1="4" x2="4" y1="82" y2="95" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="87" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1112,0)">
+        <rect x="2" y="84" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1120,0)">
+        <line x1="4" x2="4" y1="78" y2="92" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="84" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1128,0)">
+        <line x1="4" x2="4" y1="75" y2="88" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="80" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1136,0)">
+        <rect x="2" y="77" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1144,0)">
+        <line x1="4" x2="4" y1="72" y2="86" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="78" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1152,0)">
+        <line x1="4" x2="4" y1="70" y2="82" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="74" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1160,0)">
+        <rect x="2" y="68" width="4" height="9" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1168,0)">
+        <line x1="4" x2="4" y1="65" y2="82" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="72" width="4" height="7" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1176,0)">
+        <line x1="4" x2="4" y1="62" y2="75" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="67" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1184,0)">
+        <rect x="2" y="63" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1192,0)">
+        <line x1="4" x2="4" y1="58" y2="75" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="65" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1200,0)">
+        <line x1="4" x2="4" y1="62" y2="78" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="66" width="4" height="10" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1208,0)">
+        <rect x="2" y="70" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1216,0)">
+        <line x1="4" x2="4" y1="72" y2="88" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="78" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1224,0)">
+        <line x1="4" x2="4" y1="75" y2="90" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="80" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1232,0)">
+        <rect x="2" y="83" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1240,0)">
+        <line x1="4" x2="4" y1="80" y2="95" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="87" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1248,0)">
+        <line x1="4" x2="4" y1="84" y2="96" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="88" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1256,0)">
+        <rect x="2" y="86" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1264,0)">
+        <line x1="4" x2="4" y1="83" y2="98" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="89" width="4" height="7" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1272,0)">
+        <line x1="4" x2="4" y1="85" y2="100" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="90" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1280,0)">
+        <rect x="2" y="88" width="4" height="10" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1288,0)">
+        <line x1="4" x2="4" y1="82" y2="102" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="92" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1296,0)">
+        <line x1="4" x2="4" y1="88" y2="105" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="95" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1304,0)">
+        <rect x="2" y="90" width="4" height="10" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1312,0)">
+        <line x1="4" x2="4" y1="85" y2="98" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="89" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1320,0)">
+        <line x1="4" x2="4" y1="82" y2="95" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="87" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1328,0)">
+        <rect x="2" y="84" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1336,0)">
+        <line x1="4" x2="4" y1="78" y2="92" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="84" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1344,0)">
+        <line x1="4" x2="4" y1="75" y2="88" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="80" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1352,0)">
+        <rect x="2" y="77" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1360,0)">
+        <line x1="4" x2="4" y1="72" y2="86" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="78" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1368,0)">
+        <line x1="4" x2="4" y1="70" y2="82" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="74" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1376,0)">
+        <rect x="2" y="68" width="4" height="9" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1384,0)">
+        <line x1="4" x2="4" y1="65" y2="82" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="72" width="4" height="7" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1392,0)">
+        <line x1="4" x2="4" y1="70" y2="85" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="73" width="4" height="9" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1400,0)">
+        <rect x="2" y="75" width="4" height="18" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1408,0)">
+        <line x1="4" x2="4" y1="80" y2="95" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="82" width="4" height="10" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1416,0)">
+        <line x1="4" x2="4" y1="85" y2="105" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="90" width="4" height="12" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1424,0)">
+        <rect x="2" y="88" width="4" height="14" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1432,0)">
+        <line x1="4" x2="4" y1="82" y2="102" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="92" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1440,0)">
+        <line x1="4" x2="4" y1="88" y2="105" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="95" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1448,0)">
+        <rect x="2" y="90" width="4" height="10" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1456,0)">
+        <line x1="4" x2="4" y1="85" y2="98" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="89" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1464,0)">
+        <line x1="4" x2="4" y1="82" y2="95" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="87" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1472,0)">
+        <rect x="2" y="84" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1480,0)">
+        <line x1="4" x2="4" y1="78" y2="92" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="84" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1488,0)">
+        <line x1="4" x2="4" y1="75" y2="88" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="80" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1496,0)">
+        <rect x="2" y="77" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1504,0)">
+        <line x1="4" x2="4" y1="72" y2="86" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="78" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1512,0)">
+        <line x1="4" x2="4" y1="70" y2="82" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="74" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1520,0)">
+        <rect x="2" y="68" width="4" height="9" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1528,0)">
+        <line x1="4" x2="4" y1="65" y2="82" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="72" width="4" height="7" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1536,0)">
+        <line x1="4" x2="4" y1="62" y2="75" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="67" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1544,0)">
+        <rect x="2" y="63" width="4" height="7" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1552,0)">
+        <line x1="4" x2="4" y1="58" y2="72" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="65" width="4" height="5" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1560,0)">
+        <line x1="4" x2="4" y1="55" y2="68" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="60" width="4" height="6" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1568,0)">
+        <rect x="2" y="52" width="4" height="12" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1576,0)">
+        <line x1="4" x2="4" y1="58" y2="75" stroke="#ff4d4f" stroke-width="0.8"/>
+        <rect x="2" y="65" width="4" height="6" fill="#ff4d4f" rx="0.5"/>
+      </g>
+      <g transform="translate(1584,0)">
+        <line x1="4" x2="4" y1="55" y2="68" stroke="#16c784" stroke-width="0.8"/>
+        <rect x="2" y="58" width="4" height="8" fill="#16c784" rx="0.5"/>
+      </g>
+      <g transform="translate(1592,0)">
+        <rect x="2" y="62" width="4" height="14" fill="#16c784" rx="0.5"/>
+      </g>
+    </g>
+    <!-- Duplicate the entire pattern for seamless loop -->
+      <g id="duplicate-pattern">
+        <!-- This is an exact copy of your pattern starting from 1600px -->
+        <g transform="translate(1600,0)">
+          <line x1="4" x2="4" y1="85" y2="105" stroke="#16c784" stroke-width="0.8"/>
+          <rect x="2" y="90" width="4" height="12" fill="#16c784" rx="0.5"/>
+        </g>
+        <g transform="translate(1608,0)">
+          <line x1="4" x2="4" y1="80" y2="95" stroke="#ff4d4f" stroke-width="0.8"/>
+          <rect x="2" y="82" width="4" height="10" fill="#ff4d4f" rx="0.5"/>
+        </g>
+        <g transform="translate(1616,0)">
+          <rect x="2" y="75" width="4" height="18" fill="#16c784" rx="0.5"/>
+        </g>
+        <g transform="translate(1624,0)">
+          <line x1="4" x2="4" y1="70" y2="85" stroke="#16c784" stroke-width="0.8"/>
+          <rect x="2" y="73" width="4" height="9" fill="#16c784" rx="0.5"/>
+        </g>
+        <g transform="translate(1632,0)">
+          <line x1="4" x2="4" y1="68" y2="88" stroke="#ff4d4f" stroke-width="0.8"/>
+          <rect x="2" y="75" width="4" height="8" fill="#ff4d4f" rx="0.5"/>
+        </g>
+        <g transform="translate(1640,0)">
+          <line x1="4" x2="4" y1="65" y2="80" stroke="#16c784" stroke-width="0.8"/>
+          <rect x="2" y="68" width="4" height="10" fill="#16c784" rx="0.5"/>
+        </g>
+        <g transform="translate(1648,0)">
+          <rect x="2" y="62" width="4" height="14" fill="#16c784" rx="0.5"/>
+        </g>
+        
+      </g>
+     <use href="#candles" x="1600"/>
+
+      <!-- Animation -->
+      <animateTransform
+        attributeName="transform"
+        attributeType="XML"
+        type="translate"
+        values="0,0;-1600,0;0,0"
+        dur="100s"
+        repeatCount="indefinite"/>
+    </g>
+ 
+</svg>
+
+    <!-- Duplicate the pattern for seamless looping -->
+
+
+ 
+
