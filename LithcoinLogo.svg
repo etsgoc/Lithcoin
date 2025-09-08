@@ -1,0 +1,12 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" fill="orange" />
+  <circle cx="16" cy="15.84" r="12.8" fill="orange" opacity="0.9"/>
+
+  <!-- Capital L -->
+  <text x="11.84" y="23.36" font-size="20.8" font-style="italic" font-family="Arial" font-weight="bold" fill="white">L</text>
+  <text x="13.76" y="26.56" font-size="2.08" font-weight="bold" font-style="italic" font-family="Arial" fill="white">LTCO</text>
+
+  <!-- Stretched tilde (~) crossing the L -->
+  <text x="19" y="18.4" font-size="20" font-family="Arial" fill="white" text-anchor="middle" dominant-baseline="middle" transform="scale(0.8,1)">~</text>
+</svg>
