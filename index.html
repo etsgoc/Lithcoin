@@ -87,6 +87,8 @@
     .btn-secondary:hover { transform: translateY(-1px); box-shadow: var(--shadow-lg); }
     .btn-outline { background: transparent; color: var(--black); border: 1.5px solid var(--gray-300); }
     .btn-outline:hover { border-color: var(--black); }
+    .btn-purple { background: var(--purple); color: var(--white); box-shadow: var(--shadow); }
+    .btn-purple:hover { transform: translateY(-1px); box-shadow: var(--shadow-lg); }
 
     /* Header */
     header {
@@ -261,6 +263,20 @@
       letter-spacing: 0.5px;
       color: var(--gray-600);
     }
+    .coming-soon-pill {
+      display: inline-block;
+      background: var(--purple);
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--white);
+      margin-left: 8px;
+      cursor: default;
+      vertical-align: middle;
+    }
 
     /* How to Buy */
     .how-to-buy {
@@ -396,6 +412,7 @@
         <button class="btn btn-primary" id="btn-add-metamask-hero">Add to MetaMask</button>
         <a class="btn btn-secondary" href="#how-to-buy">How to Buy</a>
         <a class="btn btn-outline" href="whitepaper.html">Read Whitepaper</a>
+        <a class="btn btn-purple" href="mcjohnsonapp/index.html">Explore McJohnson Wallet</a>
       </div>
     </div>
   </main>
@@ -417,7 +434,9 @@
         </div>
         <div class="card">
           <h3>Growing Ecosystem</h3>
-          <p>LTCO is integrated with the McJohnson Wallet and will support mini-apps built using our SDK, creating a community-driven utility network.</p>
+          <p>LTCO is integrated with the McJohnson Wallet and will support mini-apps built using our SDK, creating a community-driven utility network.
+            <span class="coming-soon-pill">App Coming Soon</span>
+          </p>
         </div>
       </div>
     </div>
@@ -510,26 +529,26 @@
       <p class="section-sub">Three ways to acquire Lithcoin utility tokens.</p>
 
       <div class="how-to-buy">
-        <h3>Option 1: QuickSwap (Decentralized Exchange)</h3>
+        <h3>Option 1: McJohnson App <span class="coming-soon-pill">Coming Soon</span></h3>
         <ol>
-          <li>Install <a href="https://metamask.io" target="_blank" style="color: var(--purple);">MetaMask</a> and add the Polygon network</li>
-          <li>Get POL (Polygon's native token) for gas fees</li>
-          <li>Visit <a href="https://quickswap.exchange" target="_blank" style="color: var(--purple);">QuickSwap</a></li>
-          <li>Connect your wallet and search for LTCO using the contract address</li>
-          <li>Swap USDC for LTCO</li>
+          <li>Download the McJohnson app( will be available on iOS and Android soon)</li>
+          <li>Create or import your wallet</li>
+          <li>Use the built-in LTCO integration to acquire tokens directly</li>
+          <li>Access mini-apps and use LTCO for payments within the ecosystem</li>
         </ol>
+        <p style="margin-top: 16px; font-size: 13px; color: var(--gray-600);">
+          <strong>Note:</strong> The McJohnson Wallet is a non-custodial wallet. You control your private keys at all times.
+        </p>
 
         <div class="platform">
-          <h3>Option 2: McJohnson App</h3>
+          <h3>Option 2: QuickSwap (Decentralized Exchange)</h3>
           <ol>
-            <li>Download the McJohnson app( will be available on iOS and Android soon)</li>
-            <li>Create or import your wallet</li>
-            <li>Use the built-in LTCO integration to acquire tokens directly</li>
-            <li>Access mini-apps and use LTCO for payments within the ecosystem</li>
+            <li>Install <a href="https://metamask.io" target="_blank" style="color: var(--purple);">MetaMask</a> and add the Polygon network</li>
+            <li>Get POL (Polygon's native token) for gas fees</li>
+            <li>Visit <a href="https://quickswap.exchange" target="_blank" style="color: var(--purple);">QuickSwap</a></li>
+            <li>Connect your wallet and search for LTCO using the contract address</li>
+            <li>Swap USDC for LTCO</li>
           </ol>
-          <p style="margin-top: 16px; font-size: 13px; color: var(--gray-600);">
-            <strong>Note:</strong> The McJohnson Wallet is a non-custodial wallet. You control your private keys at all times.
-          </p>
         </div>
 
         <div class="platform">
