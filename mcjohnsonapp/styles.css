@@ -953,19 +953,21 @@ code, pre, .code-font {
 .wallet-actions {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-sm);
+    gap: 6px;
 }
 
 .wallet-action {
     background: rgba(139, 92, 246, 0.1);
     border: 1px solid rgba(139, 92, 246, 0.3);
     border-radius: var(--radius-sm);
-    padding: var(--spacing-md);
+    padding: 10px 8px;
     color: var(--purple-secondary);
     font-weight: 600;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     cursor: pointer;
     transition: all var(--transition-fast);
+    text-align: center;
+    white-space: nowrap;
 }
 
 .wallet-action:hover {
@@ -1120,6 +1122,8 @@ code, pre, .code-font {
     border-radius: var(--radius-md);
     padding: var(--spacing-lg);
     overflow-x: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .code-block pre {
@@ -1127,6 +1131,9 @@ code, pre, .code-font {
     font-family: var(--font-code);
     font-size: 0.875rem;
     line-height: 1.6;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* ================================
@@ -1325,6 +1332,18 @@ code, pre, .code-font {
 
 .code-panel {
     display: none;
+}
+.code-panel pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.code-panel code {
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .code-panel.active {
@@ -1955,6 +1974,23 @@ code, pre, .code-font {
 
     .feature-row.reverse {
         direction: ltr;
+    }
+   .feature-row {
+        padding: var(--spacing-md);
+    }
+    
+    .feature-visual {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .code-block {
+        padding: var(--spacing-sm);
+        font-size: 0.75rem;
+    }
+    
+    .code-block pre {
+        font-size: 0.75rem;
     }
 
     .code-tabs {
