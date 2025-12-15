@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McJohnson Wallet - Web3 Non-Custodial Wallet & Mini App Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Back to Lithcoin Banner -->
+    <div class="lithcoin-banner">
+        <div class="banner-content">
+            <span class="banner-icon">←</span>
+            <a href="../index.html" class="banner-link">Back to Lithcoin</a>
+        </div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Mobile Menu Button (Fixed, outside sidebar) -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="logo-bracket">{</span>
+                <span class="logo-text">McJohnson</span>
+                <span class="logo-bracket">}</span>
+            </div>
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <div class="sidebar-content">
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" data-section="home">
+                    <span class="nav-icon">→</span>
+                    <span class="nav-text">Home</span>
+                </a></li>
+                <li><a href="#wallet" class="nav-link" data-section="wallet">
+                    <span class="nav-icon">→</span>
+                    <span class="nav-text">Wallet</span>
+                </a></li>
+                <li><a href="#miniapps" class="nav-link" data-section="miniapps">
+                    <span class="nav-icon">→</span>
+                    <span class="nav-text">Mini Apps</span>
+                </a></li>
+                <li><a href="#developers" class="nav-link" data-section="developers">
+                    <span class="nav-icon">→</span>
+                    <span class="nav-text">Developers</span>
+                </a></li>
+                <li><a href="#ltco" class="nav-link" data-section="ltco">
+                    <span class="nav-icon">→</span>
+                    <span class="nav-text">LTCO Token</span>
+                </a></li>
+                <li><a href="#business" class="nav-link" data-section="business">
+                    <span class="nav-icon">→</span>
+                    <span class="nav-text">For Business</span>
+                </a></li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="social-links">
+                    <a href="https://x.com/etsgocltd" target="_blank" class="social-link" title="X (Twitter)">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/etsgoc" target="_blank" class="social-link" title="Telegram">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.93 1.23-5.45 3.62-.52.36-.99.53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.37-.48 1.02-.73 3.97-1.73 6.62-2.87 7.94-3.43 3.79-1.58 4.57-1.86 5.09-1.87.11 0 .37.03.53.17.14.12.18.28.2.41-.01.06.01.24 0 .38z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/etsgoc" target="_blank" class="social-link" title="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section active">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="code-bracket">&lt;</span>
+                        <span>Non-Custodial Web3 Wallet</span>
+                        <span class="code-bracket">/&gt;</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Your Keys.</span><br>
+                        <span class="gradient-text">Your Assets.</span><br>
+                        <span class="gradient-text">Your Control.</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        McJohnson Wallet is a non-custodial cryptocurrency wallet with an integrated 
+                        mini-app ecosystem. Build, discover, and use decentralized applications—all 
+                        while maintaining complete control of your digital assets.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="#wallet" class="btn btn-primary">
+                            <span>Explore Wallet</span>
+                            <span class="btn-arrow">→</span>
+                        </a>
+                        <a href="#developers" class="btn btn-secondary">
+                            <span>Build Apps</span>
+                            <span class="code-symbol">{ }</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">
+                                <span class="code-bracket">[</span>
+                                <span class="counter" data-target="120000000">0</span>
+                                <span class="code-bracket">]</span>
+                            </div>
+                            <div class="stat-label">LTCO Total Supply</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">
+                                <span class="code-bracket">[</span>
+                                <span>∞</span>
+                                <span class="code-bracket">]</span>
+                            </div>
+                            <div class="stat-label">Possibilities</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Token Display -->
+                <div class="token-display" id="tokenDisplay">
+                    <div class="token-container">
+                        <div class="token-logo">
+                            <img src="lithcoinlogo.png" alt="LTCO" class="token-symbol-img">
+                            <div class="token-glow"></div>
+                        </div>
+                        <div class="token-particles" id="tokenParticles"></div>
+                    </div>
+                    <p class="token-hint">
+                        <span class="code-bracket">//</span> Drag or tap to interact
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wallet Section -->
+        <section id="wallet" class="section wallet-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="code-comment">// </span>
+                        <span class="gradient-text">The Wallet</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        True ownership. Complete privacy. Zero compromises.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card" data-animation="slide-up">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Non-Custodial</h3>
+                        <p class="feature-description">
+                            You control your private keys. We never touch your funds. 
+                            Your wallet, your rules—no intermediaries, no third-party risks.
+                        </p>
+                        <div class="feature-code">
+                            <code>
+                                <span class="code-keyword">const</span> control = <span class="code-string">"yours"</span>;
+                            </code>
+                        </div>
+                    </div>
+
+                    <div class="feature-card" data-animation="slide-up" style="animation-delay: 0.1s">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                                <polyline points="2 17 12 22 22 17"/>
+                                <polyline points="2 12 12 17 22 12"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Multi-Chain Support</h3>
+                        <p class="feature-description">
+                            Built on Polygon for lightning-fast transactions and minimal fees. 
+                            Cross-chain support coming soon for Ethereum, BSC, and more.
+                        </p>
+                        <div class="feature-code">
+                            <code>
+                                <span class="code-keyword">network</span>: Polygon <span class="code-comment">// $0.001 fees</span>
+                            </code>
+                        </div>
+                    </div>
+
+                    <div class="feature-card" data-animation="slide-up" style="animation-delay: 0.2s">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Bank-Grade Security</h3>
+                        <p class="feature-description">
+                            Military-grade encryption, biometric authentication, and 
+                            local key storage ensure your assets are always protected.
+                        </p>
+                        <div class="feature-code">
+                            <code>
+                                <span class="code-keyword">encryption</span>: AES-<span class="code-number">256</span>
+                            </code>
+                        </div>
+                    </div>
+
+                    <div class="feature-card" data-animation="slide-up" style="animation-delay: 0.3s">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Instant Transactions</h3>
+                        <p class="feature-description">
+                            Send and receive LTCO in 2-5 seconds. No waiting, 
+                            no delays—just instant peer-to-peer value transfer.
+                        </p>
+                        <div class="feature-code">
+                            <code>
+                                <span class="code-keyword">speed</span>: <span class="code-number">2</span>-<span class="code-number">5</span>s
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-showcase">
+                    <div class="showcase-content">
+                        <h3 class="showcase-title">
+                            <span class="code-bracket">&lt;</span>
+                            Experience True Freedom
+                            <span class="code-bracket">/&gt;</span>
+                        </h3>
+                        <ul class="showcase-list">
+                            <li><span class="list-icon">✓</span> Create unlimited wallets</li>
+                            <li><span class="list-icon">✓</span> Import existing wallets</li>
+                            <li><span class="list-icon">✓</span> Export private keys anytime</li>
+                            <li><span class="list-icon">✓</span> Transaction history</li>
+                            <li><span class="list-icon">✓</span> Custom username handles</li>
+                            <li><span class="list-icon">✓</span> QR code payments</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">
+                            <span>Download Wallet</span>
+                            <span class="btn-arrow">→</span>
+                        </a>
+                    </div>
+                    <div class="showcase-visual">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <div class="wallet-ui">
+                                    <div class="wallet-balance">
+                                        <div class="balance-label">Total Balance</div>
+                                        <div class="balance-amount">
+                                            <span class="balance-value">1,234.56</span>
+                                            <span class="balance-currency">LTCO</span>
+                                        </div>
+                                    </div>
+                                    <div class="wallet-actions">
+                                        <button class="wallet-action">Send</button>
+                                        <button class="wallet-action">Receive</button>
+                                        <button class="wallet-action">Apps</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mini Apps Section -->
+        <section id="miniapps" class="section miniapps-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="code-comment">// </span>
+                        <span class="gradient-text">Mini App Ecosystem</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Discover, install, and use decentralized applications—all within your wallet.
+                    </p>
+            </div>
+
+            <div class="miniapps-grid">
+                <div class="miniapp-card" data-animation="fade-in">
+                    <div class="miniapp-icon">
+                        <div class="icon-placeholder">🎮</div>
+                    </div>
+                    <h3 class="miniapp-title">Gaming</h3>
+                    <p class="miniapp-description">
+                        Casual games, tournaments, and blockchain-based gaming experiences.
+                    </p>
+                    <div class="miniapp-stats">
+                        <span class="stat-badge">Coming Soon</span>
+                    </div>
+                </div>
+
+                <div class="miniapp-card" data-animation="fade-in" style="animation-delay: 0.1s">
+                    <div class="miniapp-icon">
+                        <div class="icon-placeholder">🛍️</div>
+                    </div>
+                    <h3 class="miniapp-title">Shopping</h3>
+                    <p class="miniapp-description">
+                        Buy clothing, electronics, and everyday items with LTCO directly from your wallet.
+                    </p>
+                    <div class="miniapp-stats">
+                        <span class="stat-badge">Coming Soon</span>
+                    </div>
+                </div>
+
+                <div class="miniapp-card" data-animation="fade-in" style="animation-delay: 0.2s">
+                    <div class="miniapp-icon">
+                        <div class="icon-placeholder">🏨</div>
+                    </div>
+                    <h3 class="miniapp-title">Travel & Hotels</h3>
+                    <p class="miniapp-description">
+                        Book hotels, flights, and vacation rentals. Pay with crypto seamlessly.
+                    </p>
+                    <div class="miniapp-stats">
+                        <span class="stat-badge">Coming Soon</span>
+                    </div>
+                </div>
+
+                <div class="miniapp-card" data-animation="fade-in" style="animation-delay: 0.3s">
+                    <div class="miniapp-icon">
+                        <div class="icon-placeholder">🍕</div>
+                    </div>
+                    <h3 class="miniapp-title">Food Delivery</h3>
+                    <p class="miniapp-description">
+                        Order food from local restaurants and pay with LTCO. No intermediaries.
+                    </p>
+                    <div class="miniapp-stats">
+                        <span class="stat-badge">Coming Soon</span>
+                    </div>
+                </div>
+
+                <div class="miniapp-card" data-animation="fade-in" style="animation-delay: 0.4s">
+                    <div class="miniapp-icon">
+                        <div class="icon-placeholder">💰</div>
+                    </div>
+                    <h3 class="miniapp-title">DeFi Tools</h3>
+                    <p class="miniapp-description">
+                        Swap tokens, provide liquidity, and access decentralized finance.
+                    </p>
+                    <div class="miniapp-stats">
+                        <span class="stat-badge">Coming Soon</span>
+                    </div>
+                </div>
+
+                <div class="miniapp-card" data-animation="fade-in" style="animation-delay: 0.5s">
+                    <div class="miniapp-icon">
+                        <div class="icon-placeholder">🎨</div>
+                    </div>
+                    <h3 class="miniapp-title">NFT Marketplace</h3>
+                    <p class="miniapp-description">
+                        Browse, mint, and trade digital collectibles and artwork.
+                    </p>
+                    <div class="miniapp-stats">
+                        <span class="stat-badge">Coming Soon</span>
+                    </div>
+                </div>
+
+                <div class="miniapp-card" data-animation="fade-in" style="animation-delay: 0.6s">
+                    <div class="miniapp-icon">
+                        <div class="icon-placeholder">🚕</div>
+                    </div>
+                    <h3 class="miniapp-title">Ride Sharing</h3>
+                    <p class="miniapp-description">
+                        Book rides and pay drivers directly with LTCO. Peer-to-peer transportation.
+                    </p>
+                    <div class="miniapp-stats">
+                        <span class="stat-badge">Coming Soon</span>
+                    </div>
+                </div>
+
+                <div class="miniapp-card" data-animation="fade-in" style="animation-delay: 0.7s">
+                    <div class="miniapp-icon">
+                        <div class="icon-placeholder">📊</div>
+                    </div>
+                    <h3 class="miniapp-title">Business Tools</h3>
+                    <p class="miniapp-description">
+                        Invoice management, payroll, accounting tools for crypto-native businesses.
+                    </p>
+                    <div class="miniapp-stats">
+                        <span class="stat-badge">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add this text after the grid -->
+            <div class="miniapps-possibilities">
+                <p class="possibilities-text">
+                    <span class="code-comment">//</span> The possibilities are endless. Any service you use daily can become a mini-app. 
+                    Developers can build <strong>anything</strong> — from streaming platforms to real estate marketplaces. 
+                    If it can be built on the web, it can be a mini-app powered by LTCO.
+                </p>
+            </div>
+
+                <div class="miniapps-features">
+                    <div class="feature-row">
+                        <div class="feature-content">
+                            <h3 class="feature-heading">
+                                <span class="code-keyword">function</span> discoverApps() {
+                            </h3>
+                            <p class="feature-text">
+                                Browse curated mini-apps in the Explore tab. From games to productivity 
+                                tools, discover applications built by developers worldwide.
+                            </p>
+                            <ul class="feature-points">
+                                <li>Verified developers only</li>
+                                <li>User ratings & reviews</li>
+                                <li>Automatic updates</li>
+                                <li>One-tap installation</li>
+                            </ul>
+                        </div>
+                        <div class="feature-visual">
+                            <div class="code-block">
+                                <pre><code><span class="code-comment">// Install any mini-app</span>
+<span class="code-keyword">const</span> app = <span class="code-keyword">await</span> explore.install({
+  <span class="code-property">id</span>: <span class="code-string">"game-xyz"</span>,
+  <span class="code-property">from</span>: <span class="code-string">"IPFS"</span>,
+  <span class="code-property">permissions</span>: [<span class="code-string">"wallet"</span>, <span class="code-string">"sign"</span>]
+});
+
+<span class="code-comment">// Launch installed app</span>
+app.<span class="code-method">launch</span>();</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-row reverse">
+                        <div class="feature-content">
+                            <h3 class="feature-heading">
+                                <span class="code-keyword">class</span> PermissionManager {
+                            </h3>
+                            <p class="feature-text">
+                                You control exactly what each app can access. Grant permissions 
+                                granularly and revoke them anytime.
+                            </p>
+                            <ul class="feature-points">
+                                <li>Wallet address & balance</li>
+                                <li>Transaction signing</li>
+                                <li>Camera & location</li>
+                                <li>Local storage</li>
+                                <li>Push notifications</li>
+                            </ul>
+                        </div>
+                        <div class="feature-visual">
+                            <div class="code-block">
+                                <pre><code><span class="code-comment">// Request permissions</span>
+<span class="code-keyword">const</span> granted = <span class="code-keyword">await</span> mcj.permissions.<span class="code-method">request</span>([
+  <span class="code-string">"wallet"</span>,
+  <span class="code-string">"username"</span>,
+  <span class="code-string">"sign"</span>
+]);
+
+<span class="code-keyword">if</span> (granted) {
+  <span class="code-comment">// Access granted features</span>
+  <span class="code-keyword">const</span> address = <span class="code-keyword">await</span> mcj.wallet.<span class="code-method">getAddress</span>();
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Developers Section -->
+        <section id="developers" class="section developers-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="code-comment">// </span>
+                        <span class="gradient-text">Build the Future</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Create mini-apps with our powerful SDK. Publish to millions of users.
+                    </p>
+                </div>
+
+                <div class="developer-hero">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="terminal-btn red"></span>
+                                <span class="terminal-btn yellow"></span>
+                                <span class="terminal-btn green"></span>
+                            </div>
+                            <div class="terminal-title">mcjohnson-sdk</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command">npm install -g mcjohnson-sdk</span>
+                            </div>
+                            <div class="terminal-output">
+                                <span class="text-success">✓</span> mcjohnson-sdk@1.0.1 installed successfully
+                            </div>
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command">mcj init my-first-app</span>
+                            </div>
+                            <div class="terminal-output">
+                                <span class="text-success">✓</span> Created project structure<br>
+                                <span class="text-success">✓</span> Generated manifest.json<br>
+                                <span class="text-success">✓</span> Added starter template
+                            </div>
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command">mcj dev --qr</span>
+                            </div>
+                            <div class="terminal-output">
+                                <span class="text-info">🚀</span> Dev server running on http://localhost:3000<br>
+                                <span class="text-info">📱</span> Scan QR code to test on device
+                            </div>
+                            <div class="terminal-line">
+                                <span class="terminal-cursor">▋</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sdk-features">
+                    <div class="sdk-feature">
+                        <div class="sdk-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </div>
+                        <h3>Simple API</h3>
+                        <p>Clean, well-documented JavaScript SDK. Build apps in minutes, not weeks.</p>
+                    </div>
+
+                    <div class="sdk-feature">
+                        <div class="sdk-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="2" y1="12" x2="22" y2="12"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                        </div>
+                        <h3>IPFS Publishing</h3>
+                        <p>Deploy apps to IPFS for decentralized, censorship-resistant distribution.</p>
+                    </div>
+
+                    <div class="sdk-feature">
+                        <div class="sdk-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <h3>Live Testing</h3>
+                        <p>QR code dev server lets you test on real devices instantly. No app stores.</p>
+                    </div>
+
+                    <div class="sdk-feature">
+                        <div class="sdk-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                        </div>
+                        <h3>Full Documentation</h3>
+                        <p>Comprehensive guides, API references, and examples. Get help when you need it.</p>
+                    </div>
+                </div>
+
+                <div class="code-example-section">
+                    <h3 class="example-title">
+                        <span class="code-comment">// </span>
+                        Build Your First App in 5 Minutes
+                    </h3>
+                    
+                    <div class="code-tabs">
+                        <button class="code-tab active" data-tab="install">Installation</button>
+                        <button class="code-tab" data-tab="wallet">Wallet API</button>
+                        <button class="code-tab" data-tab="sign">Sign Transaction</button>
+                        <button class="code-tab" data-tab="publish">Publish</button>
+                    </div>
+
+                    <div class="code-panels">
+                        <div class="code-panel active" data-panel="install">
+                            <pre><code><span class="code-comment">// Install the SDK globally</span>
+<span class="terminal-prompt">$</span> npm install -g mcjohnson-sdk
+
+<span class="code-comment">// Create new mini-app project</span>
+<span class="terminal-prompt">$</span> mcj init my-game
+
+<span class="code-comment">// Start development server</span>
+<span class="terminal-prompt">$</span> cd my-game
+<span class="terminal-prompt">$</span> mcj dev --qr
+
+<span class="code-comment">// Scan QR code with wallet to test</span></code></pre>
+                        </div>
+
+                        <div class="code-panel" data-panel="wallet">
+                            <pre><code><span class="code-comment">// Wait for SDK to load</span>
+<span class="code-keyword">async function</span> <span class="code-method">waitForSDK</span>() {
+  <span class="code-keyword">return new</span> <span class="code-class">Promise</span>(<span class="code-parameter">resolve</span> => {
+    <span class="code-keyword">if</span> (<span class="code-keyword">typeof</span> window.mcj !== <span class="code-string">'undefined'</span>) {
+      <span class="code-method">resolve</span>();
+    } <span class="code-keyword">else</span> {
+      <span class="code-method">setTimeout</span>(() => <span class="code-method">waitForSDK</span>().<span class="code-method">then</span>(resolve), <span class="code-number">100</span>);
+    }
+  });
+}
+
+<span class="code-comment">// Get user's wallet address</span>
+<span class="code-keyword">await</span> <span class="code-method">waitForSDK</span>();
+<span class="code-keyword">const</span> result = <span class="code-keyword">await</span> window.mcj.wallet.<span class="code-method">getAddress</span>();
+
+<span class="code-keyword">if</span> (result.ok) {
+  console.<span class="code-method">log</span>(<span class="code-string">'Address:'</span>, result.address);
+}</code></pre>
+                        </div>
+
+                        <div class="code-panel" data-panel="sign">
+                            <pre><code><span class="code-comment">// Request LTCO transaction</span>
+<span class="code-keyword">const</span> tx = {
+  <span class="code-property">meta</span>: {
+    <span class="code-property">transfer</span>: {
+      <span class="code-property">to</span>: <span class="code-string">'0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb'</span>,
+      <span class="code-property">amount</span>: <span class="code-string">'1000000000000000000'</span> <span class="code-comment">// 1 LTCO</span>
+    }
+  },
+  <span class="code-property">chainId</span>: <span class="code-number">137</span>
+};
+
+<span class="code-keyword">const</span> result = <span class="code-keyword">await</span> window.mcj.wallet.<span class="code-method">sign</span>(tx);
+
+<span class="code-keyword">if</span> (result.ok) {
+  console.<span class="code-method">log</span>(<span class="code-string">'Transaction hash:'</span>, result.result.txHash);
+}</code></pre>
+                        </div>
+
+                        <div class="code-panel" data-panel="publish">
+                            <pre><code><span class="code-comment">// Build your app</span>
+<span class="terminal-prompt">$</span> mcj build
+
+<span class="code-comment">// Sign manifest (optional but recommended)</span>
+<span class="terminal-prompt">$</span> mcj sign gen-keys
+<span class="terminal-prompt">$</span> mcj sign sign manifest.json
+
+<span class="code-comment">// Publish to IPFS</span>
+<span class="terminal-prompt">$</span> mcj publish dist.zip
+
+<span class="text-success">✅ Published to IPFS!</span>
+<span class="text-info">CID:</span> QmXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+<span class="code-comment">// Submit to app registry for review</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="developer-cta">
+                    <h3>Ready to Build?</h3>
+                    <p>Join our developer community and start creating mini-apps today.</p>
+                    <div class="cta-buttons">
+                        <a href="https://github.com/etsgoc/mcjohnson-sdk" class="btn btn-primary" target="_blank">
+                            <span>View SDK Docs</span>
+                            <span class="btn-arrow">→</span>
+                        </a>
+                        <a href="https://github.com/etsgoc/mcjohnson-miniapp-registry" class="btn btn-secondary" target="_blank">
+                            <span>Submit Your App</span>
+                            <span class="code-symbol">{ }</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LTCO Token Section -->
+        <section id="ltco" class="section ltco-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="code-comment">// </span>
+                        <span class="gradient-text">LTCO Token</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        The utility token powering the McJohnson ecosystem.
+                    </p>
+                </div>
+
+                <div class="ltco-content">
+                    <div class="ltco-info">
+                        <div class="info-card">
+                            <div class="info-header">
+                                <h3>What is LTCO?</h3>
+                            </div>
+                            <div class="info-body">
+                                <p>
+                                    Lithcoin (LTCO) is a utility token built on Polygon blockchain, 
+                                    designed for fast, low-cost transactions within the McJohnson Wallet 
+                                    ecosystem and integrated mini-applications.
+                                </p>
+                                <ul class="info-list">
+                                    <li><span class="list-icon">•</span> Not an investment instrument</li>
+                                    <li><span class="list-icon">•</span> Used for transactions, not speculation</li>
+                                    <li><span class="list-icon">•</span> Powers mini-app payments</li>
+                                    <li><span class="list-icon">•</span> Fixed supply: 120M tokens</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-header">
+                                <h3>Token Specifications</h3>
+                            </div>
+                            <div class="info-body">
+                                <div class="spec-grid">
+                                    <div class="spec-item">
+                                        <div class="spec-label">Name</div>
+                                        <div class="spec-value">Lithcoin</div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-label">Symbol</div>
+                                        <div class="spec-value">LTCO</div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-label">Standard</div>
+                                        <div class="spec-value">ERC-20</div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-label">Network</div>
+                                        <div class="spec-value">Polygon PoS</div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-label">Total Supply</div>
+                                        <div class="spec-value">120,000,000</div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-label">Decimals</div>
+                                        <div class="spec-value">18</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ltco-visual">
+                        <div class="token-stats-card">
+                            <div class="stats-header">
+                                <h3>Live Stats</h3>
+                                <div class="stats-badge">Real-time</div>
+                            </div>
+                            <div class="stats-body">
+                                <div class="stat-row">
+                                    <span class="stat-label">Circulating Supply</span>
+                                    <span class="stat-value">360,000 <span class="stat-unit">LTCO</span></span>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="stat-label">Total Holders</span>
+                                    <span class="stat-value">13</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="stat-label">Liquidity Pool</span>
+                                    <span class="stat-value">$112 <span class="stat-unit">USD</span></span>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="stat-label">Network</span>
+                                    <span class="stat-value">Polygon</span>
+                                </div>
+                            </div>
+                            <div class="stats-footer">
+                                <a href="https://polygonscan.com/token/0xE278e264eA19A6Fe78ad2667041561aA90f42E71" 
+                                   class="btn btn-outline" target="_blank">
+                                    <span>View on PolygonScan</span>
+                                    <span class="btn-arrow">↗</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="allocation-card">
+                            <div class="allocation-header">
+                                <h3>Token Allocation</h3>
+                            </div>
+                            <div class="allocation-body">
+                                <div class="allocation-item">
+                                    <div class="allocation-bar" style="--percentage: 30%">
+                                        <div class="bar-fill"></div>
+                                    </div>
+                                    <div class="allocation-info">
+                                        <span class="allocation-label">Circulating Supply</span>
+                                        <span class="allocation-value">30%</span>
+                                    </div>
+                                </div>
+                                <div class="allocation-item">
+                                    <div class="allocation-bar" style="--percentage: 35%">
+                                        <div class="bar-fill"></div>
+                                    </div>
+                                    <div class="allocation-info">
+                                        <span class="allocation-label">Protocol Operations</span>
+                                        <span class="allocation-value">35%</span>
+                                    </div>
+                                </div>
+                                <div class="allocation-item">
+                                    <div class="allocation-bar" style="--percentage: 25%">
+                                        <div class="bar-fill"></div>
+                                    </div>
+                                    <div class="allocation-info">
+                                        <span class="allocation-label">Community Rewards</span>
+                                        <span class="allocation-value">25%</span>
+                                    </div>
+                                </div>
+                                <div class="allocation-item">
+                                    <div class="allocation-bar" style="--percentage: 10%">
+                                        <div class="bar-fill"></div>
+                                    </div>
+                                    <div class="allocation-info">
+                                        <span class="allocation-label">Ecosystem Reserve</span>
+                                        <span class="allocation-value">10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ltco-notice">
+                    <div class="notice-icon">⚠️</div>
+                    <div class="notice-content">
+                        <h4>Important Notice</h4>
+                        <p>
+                            LTCO is a <strong>utility token</strong>, not an investment instrument. 
+                            It is designed for transactional use within the ecosystem. For complete 
+                            information about tokenomics, vesting schedules, and technical details, 
+                            please visit the official Lithcoin website.
+                        </p>
+                        <a href="https://lithcoin.xyz" class="btn btn-outline" target="_blank">
+                            <span>Visit Lithcoin.xyz</span>
+                            <span class="btn-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Section -->
+        <section id="business" class="section business-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="code-comment">// </span>
+                        <span class="gradient-text">For Businesses</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Accept LTCO payments. Integrate seamlessly. Grow your business.
+                    </p>
+                </div>
+
+                <div class="business-grid">
+                    <div class="business-card">
+                        <div class="business-icon">💼</div>
+                        <h3>Accept Payments</h3>
+                        <p>
+                            Integrate LTCO payments into your e-commerce platform, 
+                            mobile app, or physical store. Fast settlements, minimal fees.
+                        </p>
+                        <ul class="business-features">
+                            <li>Instant confirmations</li>
+                            <li>No chargebacks</li>
+                            <li>Global reach</li>
+                            <li>Low transaction costs</li>
+                        </ul>
+                    </div>
+
+                    <div class="business-card">
+                        <div class="business-icon">🛍️</div>
+                        <h3>Build Mini-Apps</h3>
+                        <p>
+                            Create custom mini-apps for your business. Offer exclusive 
+                            services, loyalty programs, or digital goods directly in the wallet.
+                        </p>
+                        <ul class="business-features">
+                            <li>Branded experience</li>
+                            <li>Direct customer access</li>
+                            <li>Built-in payments</li>
+                            <li>Analytics dashboard</li>
+                        </ul>
+                    </div>
+
+                    <div class="business-card">
+                        <div class="business-icon">🔗</div>
+                        <h3>API Integration</h3>
+                        <p>
+                            Use our RESTful API to integrate LTCO into your existing 
+                            infrastructure. Generate payment links, track transactions, automate workflows.
+                        </p>
+                        <ul class="business-features">
+                            <li>RESTful API</li>
+                            <li>Webhooks</li>
+                            <li>Transaction monitoring</li>
+                            <li>Developer support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="business-cta-section">
+                    <div class="business-cta-content">
+                        <h3>Ready to Integrate LTCO?</h3>
+                        <p>
+                            Join forward-thinking businesses already using LTCO for 
+                            payments, rewards, and customer engagement.
+                        </p>
+                        <div class="business-stats">
+                            <div class="business-stat">
+                                <div class="business-stat-value">$0.001</div>
+                                <div class="business-stat-label">Avg. Transaction Fee</div>
+                            </div>
+                            <div class="business-stat">
+                                <div class="business-stat-value">2-5s</div>
+                                <div class="business-stat-label">Settlement Time</div>
+                            </div>
+                            <div class="business-stat">
+                                <div class="business-stat-value">24/7</div>
+                                <div class="business-stat-label">Support Available</div>
+                            </div>
+                        </div>
+                        <a href="mailto:support@lithcoin.xyz" class="btn btn-primary">
+                            <span>Contact Sales</span>
+                            <span class="btn-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                           <a href="#home" class="logo" onclick="document.querySelector('[data-section=home]').click()"> 
+                            <span class="logo-bracket">{</span>
+                            <span class="logo-text">McJohnson</span>
+                            <span class="logo-bracket">}</span>
+                           </a>
+                        </div>
+                        <p class="footer-tagline">
+                            Your keys. Your assets. Your control.
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://x.com/etsgocltd" target="_blank" class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                            <a href="https://t.me/etsgoc" target="_blank" class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.93 1.23-5.45 3.62-.52.36-.99.53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.37-.48 1.02-.73 3.97-1.73 6.62-2.87 7.94-3.43 3.79-1.58 4.57-1.86 5.09-1.87.11 0 .37.03.53.17.14.12.18.28.2.41-.01.06.01.24 0 .38z"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/etsgoc" target="_blank" class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Product</h4>
+                        <ul class="footer-links">
+                            <li><a href="#wallet">Wallet</a></li>
+                            <li><a href="#miniapps">Mini Apps</a></li>
+                            <li><a href="#ltco">LTCO Token</a></li>
+                            <li><a href="#">Download</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Developers</h4>
+                        <ul class="footer-links">
+                            <li><a href="https://github.com/etsgoc/mcjohnson-sdk" target="_blank">SDK Docs</a></li>
+                            <li><a href="https://github.com/etsgoc/mcjohnson-miniapp-registry" target="_blank">App Registry</a></li>
+                            <li><a href="#developers">Get Started</a></li>
+                            <li><a href="mailto:dev@mcjohnson.io">Developer Support</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4 class="footer-heading">Company</h4>
+                        <ul class="footer-links">
+                            <li><a href="../index.html" target="_blank">Lithcoin</a></li>
+                            <li><a href="#business">For Business</a></li>
+                            <li><a href="mailto:support@lithcoin.xyz">Contact</a></li>
+                            <li><a href="privacy-policy.html" target="_blank">Privacy Policy</a></li>
+                            <li><a href="terms.html" target="_blank">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-legal">
+                        <p>&copy; 2025 McJohnson. All rights reserved.</p>
+                        <p class="footer-disclaimer">
+                            LTCO is a utility token, not an investment instrument. 
+                            Cryptocurrency involves risk. Always do your own research.
+                        </p>
+                    </div>
+                    <div class="footer-contract">
+                        <code class="contract-address">
+                            <span class="code-comment">//</span> Contract: 
+                            <a href="https://polygonscan.com/token/0xE278e264eA19A6Fe78ad2667041561aA90f42E71" 
+                               target="_blank">
+                                0xE278...2E71
+                            </a>
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
