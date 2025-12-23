@@ -22,11 +22,9 @@ function initNavigation() {
             
             const targetSection = link.getAttribute('data-section');
             
-            // Update active nav link
             navLinks.forEach(l => l.classList.remove('active'));
             link.classList.add('active');
             
-            // Update active section
             sections.forEach(section => {
                 section.classList.remove('active');
                 if (section.id === targetSection) {
@@ -34,7 +32,7 @@ function initNavigation() {
                 }
             });
 
-            // Close mobile menu if open (ONLY check if it's actually open)
+            // Closes mobile menu if open (ONLY check if it's actually open)
             const sidebar = document.getElementById('sidebar');
             const mobileMenuBtn = document.getElementById('mobileMenuBtn');
             if (window.innerWidth <= 900 && sidebar.classList.contains('open')) {
@@ -44,7 +42,7 @@ function initNavigation() {
                 }
             }
 
-            // Scroll the new section to the top after it becomes visible
+            // Scrolls the new section to the top after it becomes visible
             const target = document.getElementById(targetSection);
             setTimeout(() => {
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -94,7 +92,6 @@ function initMobileMenu() {
                 if (mobileMenuBtn) {
                     mobileMenuBtn.classList.remove('active');
                 }
-                // ADD THIS LINE - also remove active from sidebarToggle
                 if (sidebarToggle) {
                     sidebarToggle.classList.remove('active');
                 }
@@ -102,7 +99,7 @@ function initMobileMenu() {
         });
     }
 
-    // Prevent sidebar clicks from closing it
+    // Prevents sidebar clicks from closing it
     if (sidebar) {
         sidebar.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -268,11 +265,9 @@ function initCodeTabs() {
         button.addEventListener('click', () => {
             const targetTab = button.getAttribute('data-tab');
 
-            // Update active tab
             tabButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
 
-            // Update active panel
             tabPanels.forEach(panel => {
                 panel.classList.remove('active');
                 if (panel.getAttribute('data-panel') === targetTab) {
@@ -436,7 +431,6 @@ document.addEventListener('keydown', (e) => {
 });
 
 function activateEasterEgg() {
-    // Create a shower of tokens
     const container = document.body;
     for (let i = 0; i < 50; i++) {
         setTimeout(() => {
@@ -459,7 +453,6 @@ function activateEasterEgg() {
         }, i * 100);
     }
     
-    // Add fall animation
     if (!document.getElementById('fall-animation')) {
         const style = document.createElement('style');
         style.id = 'fall-animation';
