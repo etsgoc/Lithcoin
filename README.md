@@ -1,6 +1,6 @@
 # Lithcoin (LTCO) - Utility Token for Everyday Transactions
 
-![Lithcoin Logo](https://lithcoin.xyz/assets/images/Lithcoin.svg)
+![Lithcoin Logo](https://raw.githubusercontent.com/etsgoc/logos/refs/heads/main/lithcoinlogo.png)
 
 ## Fast Transactions. Real-World Utility.
 
